@@ -10275,11 +10275,12 @@ SQ:function SQ(a){this.a=a},
 ato(){return new A.uJ(new A.a_d(),A.z(t.K,t.Qu))},
 a5M:function a5M(a,b){this.a=a
 this.b=b},
-vq:function vq(a,b,c,d){var _=this
+vq:function vq(a,b,c,d,e){var _=this
 _.e=a
 _.CW=b
 _.cy=c
-_.a=d},
+_.p4=d
+_.a=e},
 a_d:function a_d(){},
 a_g:function a_g(){},
 zo:function zo(a){var _=this
@@ -43483,7 +43484,7 @@ n=o.e
 o=o.CW
 r=q.ga1R()
 q.a.toString
-return new A.y6(p,p,p,new A.a9i(),p,p,p,p,p,n,B.EG,p,p,B.Ch,q.ga1Y(),o,p,B.JB,s,p,r,p,p,B.l2,!1,!1,!1,!1,q.ga1w(),!0,p,p,p,new A.jh(q,t.bT))},
+return new A.y6(p,p,p,new A.a9i(),p,p,p,p,p,n,B.EG,p,p,B.Ch,q.ga1Y(),o,p,B.JB,s,p,r,p,p,B.l2,!1,!1,!1,!1,q.ga1w(),!1,p,p,p,new A.jh(q,t.bT))},
 L(a){var s,r=null,q=A.uB(!1,!1,this.WW(a),r,r,r,r,!0,r,r,new A.a9j(),r,r,r)
 this.a.toString
 s=this.d
@@ -73591,9 +73592,9 @@ $0(){},
 $S:14}
 A.Gf.prototype={
 L(a){var s=null,r=A.al1(s,B.ES,s)
-return new A.vq(new A.Fi(new A.TO(new A.bk(new A.an($.ag,t.wC),t.Fe)),s),"Kombismo",r,s)}}
+return new A.vq(new A.Fi(new A.TO(new A.bk(new A.an($.ag,t.wC),t.Fe)),s),"Kombismo",r,!1,s)}}
 A.Fi.prototype={
-L(a){var s,r,q=null,p="Stencil",o=A.ao(B.d.b6(76.5),0,0,0),n=A.dt(q,20,q),m=A.tz(A.ajf("web/img/kombismo_fu2.png",B.fQ),q,q),l=A.dt(q,100,q),k=A.dL("02 de setembro 2023",q,q,q,A.cF(q,q,B.j,q,q,q,q,q,p,q,q,40,q,q,B.ay,q,q,!0,q,q,q,q,q,q,q,q),q,q),j=A.dL("S\xe3o Miguel do Oeste/SC",q,q,q,A.cF(q,q,B.j,q,q,q,q,q,p,q,q,20,q,q,B.ay,q,q,!0,q,q,q,q,q,q,q,q),q,q),i=A.dt(q,50,q),h=A.dL("Venha participar do nosso evento gratuito!",q,q,q,A.cF(q,q,B.j,q,q,q,q,q,p,q,q,18,q,q,B.ay,q,q,!0,q,q,q,q,q,q,q,q),q,q),g=A.dL("O evento ter\xe1 as seguintes atra\xe7\xf5es:",q,q,q,A.cF(q,q,B.j,q,q,q,q,q,p,q,q,18,q,q,B.ay,q,q,!0,q,q,q,q,q,q,q,q),q,q),f=A.dt(q,10,q),e=$.aAn,d=A.a8(e).j("aj<1,lv>")
+L(a){var s,r,q=null,p="Stencil",o=A.ao(B.d.b6(76.5),0,0,0),n=A.dt(q,20,q),m=A.tz(A.ajf("web/img/logopreta2.png",B.fQ),q,q),l=A.dt(q,100,q),k=A.dL("02 de setembro 2023",q,q,q,A.cF(q,q,B.j,q,q,q,q,q,p,q,q,40,q,q,B.ay,q,q,!0,q,q,q,q,q,q,q,q),q,q),j=A.dL("S\xe3o Miguel do Oeste/SC",q,q,q,A.cF(q,q,B.j,q,q,q,q,q,p,q,q,20,q,q,B.ay,q,q,!0,q,q,q,q,q,q,q,q),q,q),i=A.dt(q,50,q),h=A.dL("Venha participar do nosso evento gratuito!",q,q,q,A.cF(q,q,B.j,q,q,q,q,q,p,q,q,18,q,q,B.ay,q,q,!0,q,q,q,q,q,q,q,q),q,q),g=A.dL("O evento ter\xe1 as seguintes atra\xe7\xf5es:",q,q,q,A.cF(q,q,B.j,q,q,q,q,q,p,q,q,18,q,q,B.ay,q,q,!0,q,q,q,q,q,q,q,q),q,q),f=A.dt(q,10,q),e=$.aAn,d=A.a8(e).j("aj<1,lv>")
 d=A.h2(q,A.tN(A.ax(new A.aj(e,new A.Yu(),d),!0,d.j("bp.E")),B.cZ,B.cn),q,q,q,q,new A.ay(16,0,16,0),1/0)
 e=A.dt(q,50,q)
 s=A.Wx(q,q,A.DD(247,174,71,0.774),q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q)

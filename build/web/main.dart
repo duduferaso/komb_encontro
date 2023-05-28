@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Kombismo',
       theme: ThemeData(
         primarySwatch: Colors.grey,
@@ -57,7 +58,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 20),
             Center(
               child: Image.asset(
-                'web/img/kombismo_fu2.png',
+                'web/img/logopreta2.png',
                 fit: BoxFit.cover,
               ),
             ),
