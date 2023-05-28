@@ -58,7 +58,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 20),
               Center(
                 child: Image.asset(
-                  'web/img/kombismo_branco.png',
+                  'web/img/kombismo_branco2.png',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -70,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                       '02 de setembro 2023',
                       style: TextStyle(
                         fontFamily: 'Stencil',
-                        fontSize: MediaQuery.of(context).size.width * 0.05,
+                        fontSize: MediaQuery.of(context).size.width * 0.06,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                       'São Miguel do Oeste/SC',
                       style: TextStyle(
                         fontFamily: 'Stencil',
-                        fontSize: MediaQuery.of(context).size.width * 0.025,
+                        fontSize: MediaQuery.of(context).size.width * 0.04,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
@@ -130,8 +130,7 @@ class HomeScreen extends StatelessWidget {
                           builder: (BuildContext context) {
                             return Dialog(
                               child: Container(
-                                width: MediaQuery.of(context).size.width *
-                                    0.4, // Definindo 70% da largura do dispositivo
+                                width: MediaQuery.of(context).size.width * 0.4,
                                 padding: EdgeInsets.all(16),
                                 child: SingleChildScrollView(
                                   child: Column(
@@ -168,11 +167,6 @@ class HomeScreen extends StatelessWidget {
                                       TextField(
                                         decoration: InputDecoration(
                                           labelText: 'Estado',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'Telefone',
                                         ),
                                       ),
                                       TextField(
