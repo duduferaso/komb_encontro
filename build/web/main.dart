@@ -39,6 +39,26 @@ class HomeScreen extends StatelessWidget {
   final CarouselController _carouselController = CarouselController();
 
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+
+    double titleFontSize;
+    double subtitleFontSize;
+    double descriptionFontSize;
+
+    if (screenWidth < 600 && screenWidth >= 400) {
+      titleFontSize = 40.0;
+      subtitleFontSize = 20.0;
+      descriptionFontSize = 18.0;
+    } else if (screenWidth <= 400) {
+      titleFontSize = 35.0;
+      subtitleFontSize = 25.0;
+      descriptionFontSize = 24.0;
+    } else {
+      titleFontSize = 60.0;
+      subtitleFontSize = 30.0;
+      descriptionFontSize = 24.0;
+    }
+
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -70,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                       '02 de setembro 2023',
                       style: TextStyle(
                         fontFamily: 'Stencil',
-                        fontSize: MediaQuery.of(context).size.width * 0.06,
+                        fontSize: titleFontSize,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
@@ -79,7 +99,7 @@ class HomeScreen extends StatelessWidget {
                       'São Miguel do Oeste/SC',
                       style: TextStyle(
                         fontFamily: 'Stencil',
-                        fontSize: MediaQuery.of(context).size.width * 0.04,
+                        fontSize: subtitleFontSize,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
@@ -89,7 +109,7 @@ class HomeScreen extends StatelessWidget {
                       'Venha participar do nosso evento gratuito!',
                       style: TextStyle(
                         fontFamily: 'Stencil',
-                        fontSize: MediaQuery.of(context).size.width * 0.022,
+                        fontSize: descriptionFontSize,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
@@ -98,7 +118,7 @@ class HomeScreen extends StatelessWidget {
                       'O evento terá as seguintes atrações:',
                       style: TextStyle(
                         fontFamily: 'Stencil',
-                        fontSize: MediaQuery.of(context).size.width * 0.022,
+                        fontSize: descriptionFontSize,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
@@ -113,8 +133,7 @@ class HomeScreen extends StatelessWidget {
                             item,
                             style: TextStyle(
                               fontFamily: 'Stencil',
-                              fontSize:
-                                  MediaQuery.of(context).size.width * 0.022,
+                              fontSize: descriptionFontSize,
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
@@ -130,7 +149,8 @@ class HomeScreen extends StatelessWidget {
                           builder: (BuildContext context) {
                             return Dialog(
                               child: Container(
-                                width: MediaQuery.of(context).size.width * 0.4,
+                                width: MediaQuery.of(context).size.width *
+                                    0.4, // Definindo 70% da largura do dispositivo
                                 padding: EdgeInsets.all(16),
                                 child: SingleChildScrollView(
                                   child: Column(
@@ -141,10 +161,7 @@ class HomeScreen extends StatelessWidget {
                                       Text(
                                         'Formulário de Cadastro',
                                         style: TextStyle(
-                                          fontSize: MediaQuery.of(context)
-                                                  .size
-                                                  .width *
-                                              0.022,
+                                          fontSize: 18,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
@@ -243,7 +260,6 @@ class HomeScreen extends StatelessWidget {
                         'Faça Parte',
                         style: TextStyle(
                           fontFamily: 'Stencil',
-                          fontSize: MediaQuery.of(context).size.width * 0.025,
                           color: Colors.white,
                         ),
                       ),
@@ -261,7 +277,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Stencil',
                       color: Colors.white,
-                      fontSize: MediaQuery.of(context).size.width * 0.03,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -308,7 +324,7 @@ class HomeScreen extends StatelessWidget {
                     Text(
                       'Desenvolvido por',
                       style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.width * 0.015,
+                        fontSize: 10,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -316,7 +332,7 @@ class HomeScreen extends StatelessWidget {
                     Text(
                       'Eduardo Feraso',
                       style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.width * 0.017,
+                        fontSize: 11,
                         fontWeight: FontWeight.bold,
                         color: Colors.blue,
                       ),
