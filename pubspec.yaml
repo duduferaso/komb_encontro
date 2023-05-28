@@ -14,10 +14,7 @@ flutter:
   assets:
     - web/img/kombismo_fu2.jpeg
     - web/img/kombismo_fu2.png
-    - web/img/old.jpg
-    - web/img/old2.jpg
     - web/img/old3.jpg
-    - web/img/trasiera.jpeg
     - web\carrosel\gol3.jpeg
     - web\carrosel\branca1.jpeg
     - web\carrosel\branca2.jpeg

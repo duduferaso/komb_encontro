@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
         body: Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('web/img/trasiera.jpeg'),
+          image: AssetImage('web/img/old3.jpg'),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
               Colors.black.withOpacity(0.3),
