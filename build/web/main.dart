@@ -115,7 +115,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'O evento terá as seguintes atrações:',
+                      'Atrações:',
                       style: TextStyle(
                         fontFamily: 'Stencil',
                         fontSize: descriptionFontSize,
@@ -149,8 +149,7 @@ class HomeScreen extends StatelessWidget {
                           builder: (BuildContext context) {
                             return Dialog(
                               child: Container(
-                                width: MediaQuery.of(context).size.width *
-                                    0.4, // Definindo 70% da largura do dispositivo
+                                width: MediaQuery.of(context).size.width * 0.4,
                                 padding: EdgeInsets.all(16),
                                 child: SingleChildScrollView(
                                   child: Column(
