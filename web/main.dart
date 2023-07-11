@@ -93,6 +93,13 @@ class HomeScreen extends StatelessWidget {
                         fontSize: titleFontSize,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
+                        shadows: [
+                          Shadow(
+                            color: Colors.black, // Cor da sombra
+                            offset: Offset(3, 4),
+                            blurRadius: 2,
+                          ),
+                        ],
                       ),
                     ),
                     Text(
@@ -102,6 +109,13 @@ class HomeScreen extends StatelessWidget {
                         fontSize: subtitleFontSize,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
+                        shadows: [
+                          Shadow(
+                            color: Colors.black, // Cor da sombra
+                            offset: Offset(3, 4),
+                            blurRadius: 2,
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 50),
@@ -112,6 +126,13 @@ class HomeScreen extends StatelessWidget {
                         fontSize: descriptionFontSize,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
+                        shadows: [
+                          Shadow(
+                            color: Colors.black, // Cor da sombra
+                            offset: Offset(3, 4),
+                            blurRadius: 2,
+                          ),
+                        ],
                       ),
                     ),
                     Text(
@@ -121,6 +142,13 @@ class HomeScreen extends StatelessWidget {
                         fontSize: descriptionFontSize,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
+                        shadows: [
+                          Shadow(
+                            color: Colors.black, // Cor da sombra
+                            offset: Offset(3, 4),
+                            blurRadius: 2,
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 10),
@@ -136,6 +164,13 @@ class HomeScreen extends StatelessWidget {
                               fontSize: descriptionFontSize,
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
+                              shadows: [
+                                Shadow(
+                                  color: Colors.black, // Cor da sombra
+                                  offset: Offset(3, 4),
+                                  blurRadius: 2,
+                                ),
+                              ],
                             ),
                           );
                         }).toList(),
@@ -260,6 +295,13 @@ class HomeScreen extends StatelessWidget {
                         style: TextStyle(
                           fontFamily: 'Stencil',
                           color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Colors.black, // Cor da sombra
+                              offset: Offset(3, 4),
+                              blurRadius: 2,
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -278,6 +320,13 @@ class HomeScreen extends StatelessWidget {
                       color: Colors.white,
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black, // Cor da sombra
+                          offset: Offset(3, 4),
+                          blurRadius: 2,
+                        ),
+                      ],
                     ),
                   ),
                 ),
