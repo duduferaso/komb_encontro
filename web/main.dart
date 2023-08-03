@@ -6,18 +6,22 @@ void main() {
 }
 
 List<String> images = [
-  'web/carrosel/gol3.jpeg',
   'web/carrosel/branca1.jpeg',
   'web/carrosel/branca2.jpeg',
   'web/carrosel/azul.jpeg',
   'web/carrosel/preta.jpeg',
 ];
 
+List<String> images2 = [
+  'web/patrocinadores/IORA.jpg',
+  'web/patrocinadores/tarab.jpg',
+  'web/patrocinadores/laserdj.jpg',
+  'web/patrocinadores/ambioeste.jpg',
+];
+
 List<String> items = [
   '* Sorteio de Brindes',
   '* Praça de Alimentação',
-  '* Mercado de Pulgas',
-  '* Troca de Óleo',
   '* Check List Veicular',
 ];
 
@@ -179,126 +183,128 @@ class HomeScreen extends StatelessWidget {
                     SizedBox(height: 50),
                     ElevatedButton(
                       onPressed: () {
-                        showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return Dialog(
-                              child: Container(
-                                width: MediaQuery.of(context).size.width * 0.4,
-                                padding: EdgeInsets.all(16),
-                                child: SingleChildScrollView(
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.stretch,
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Text(
-                                        'Formulário de Cadastro',
-                                        style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      SizedBox(height: 20),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'Nome',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'E-mail',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'Cidade',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'Estado',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'WhatsApp',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'Instagram',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'Facebook',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'Modelo da Kombi',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'Ano',
-                                        ),
-                                      ),
-                                      TextField(
-                                        decoration: InputDecoration(
-                                          labelText: 'Motorização',
-                                        ),
-                                      ),
-                                      SizedBox(height: 20),
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        children: [
-                                          ElevatedButton(
-                                            onPressed: () {
-                                              Navigator.of(context).pop();
-                                            },
-                                            style: ElevatedButton.styleFrom(
-                                              backgroundColor: Color.fromRGBO(
-                                                  247, 174, 71, 0.774),
-                                            ),
-                                            child: Text('Cancelar'),
-                                          ),
-                                          SizedBox(width: 16),
-                                          ElevatedButton(
-                                            onPressed: () {
-                                              // Lógica de envio do formulário
-                                              Navigator.of(context).pop();
-                                            },
-                                            style: ElevatedButton.styleFrom(
-                                              backgroundColor: Color.fromRGBO(
-                                                  247, 174, 71, 0.774),
-                                            ),
-                                            child: Text('Enviar'),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            );
-                          },
-                        );
+                        // showDialog(
+                        //   context: context,
+                        //   builder: (BuildContext context) {
+                        //     return Dialog(
+                        //       child: Container(
+                        //         width: MediaQuery.of(context).size.width * 0.4,
+                        //         padding: EdgeInsets.all(16),
+                        //         child: SingleChildScrollView(
+                        //           child: Column(
+                        //             crossAxisAlignment:
+                        //                 CrossAxisAlignment.stretch,
+                        //             mainAxisSize: MainAxisSize.min,
+                        //             children: [
+                        //               Text(
+                        //                 'Formulário de Cadastro',
+                        //                 style: TextStyle(
+                        //                   fontSize: 18,
+                        //                   fontWeight: FontWeight.bold,
+                        //                 ),
+                        //               ),
+                        //               SizedBox(height: 20),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'Nome',
+                        //                 ),
+                        //               ),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'E-mail',
+                        //                 ),
+                        //               ),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'Cidade',
+                        //                 ),
+                        //               ),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'Estado',
+                        //                 ),
+                        //               ),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'WhatsApp',
+                        //                 ),
+                        //               ),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'Instagram',
+                        //                 ),
+                        //               ),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'Facebook',
+                        //                 ),
+                        //               ),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'Modelo da Kombi',
+                        //                 ),
+                        //               ),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'Ano',
+                        //                 ),
+                        //               ),
+                        //               TextField(
+                        //                 decoration: InputDecoration(
+                        //                   labelText: 'Motorização',
+                        //                 ),
+                        //               ),
+                        //               SizedBox(height: 20),
+                        //               Row(
+                        //                 mainAxisAlignment:
+                        //                     MainAxisAlignment.end,
+                        //                 children: [
+                        //                   ElevatedButton(
+                        //                     onPressed: () {
+                        //                       Navigator.of(context).pop();
+                        //                     },
+                        //                     style: ElevatedButton.styleFrom(
+                        //                       backgroundColor: Color.fromRGBO(
+                        //                           247, 174, 71, 0.774),
+                        //                     ),
+                        //                     child: Text('Cancelar'),
+                        //                   ),
+                        //                   SizedBox(width: 16),
+                        //                   ElevatedButton(
+                        //                     onPressed: () {
+                        //                       // Lógica de envio do formulário
+                        //                       Navigator.of(context).pop();
+                        //                     },
+                        //                     style: ElevatedButton.styleFrom(
+                        //                       backgroundColor: Color.fromRGBO(
+                        //                           247, 174, 71, 0.774),
+                        //                     ),
+                        //                     child: Text('Enviar'),
+                        //                   ),
+                        //                 ],
+                        //               ),
+                        //             ],
+                        //           ),
+                        //         ),
+                        //       ),
+                        //     );
+                        //   },
+                        // );
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color.fromRGBO(247, 174, 71, 0.774),
+                        padding:
+                            EdgeInsets.symmetric(vertical: 16, horizontal: 32),
                       ),
                       child: Text(
-                        'Faça Parte',
+                        'Inscrições a partir de 07/08',
                         style: TextStyle(
                           fontFamily: 'Stencil',
                           color: Colors.white,
+                          fontSize: 14,
                           shadows: [
                             Shadow(
                               color: Colors.black, // Cor da sombra
-                              offset: Offset(3, 4),
                               blurRadius: 2,
                             ),
                           ],
@@ -308,11 +314,65 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 60),
               Padding(
                 padding: EdgeInsets.only(left: 16),
                 child: Align(
-                  alignment: Alignment.center,
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Patrocinadores',
+                    style: TextStyle(
+                      fontFamily: 'Stencil',
+                      color: Colors.white,
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black, // Cor da sombra
+                          offset: Offset(3, 4),
+                          blurRadius: 2,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              CarouselSlider(
+                carouselController: _carouselController,
+                options: CarouselOptions(
+                  height: 250.0,
+                  aspectRatio: 16 / 6,
+                  enableInfiniteScroll: true,
+                  autoPlay: true,
+                  autoPlayInterval: Duration(seconds: 3),
+                  autoPlayAnimationDuration: Duration(milliseconds: 800),
+                  autoPlayCurve: Curves.fastOutSlowIn,
+                  enlargeCenterPage: true,
+                  scrollDirection: Axis.horizontal,
+                ),
+                items: images2.map((imagePath) {
+                  return Builder(
+                    builder: (BuildContext context) {
+                      return Container(
+                        width: MediaQuery.of(context).size.width,
+                        margin: EdgeInsets.symmetric(horizontal: 5.0),
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                        ),
+                        child: Image.asset(
+                          imagePath,
+                          fit: BoxFit.cover,
+                        ),
+                      );
+                    },
+                  );
+                }).toList(),
+              ),
+              SizedBox(height: 60),
+              Padding(
+                padding: EdgeInsets.only(left: 16),
+                child: Align(
+                  alignment: Alignment.centerLeft,
                   child: Text(
                     'Participantes',
                     style: TextStyle(
@@ -334,7 +394,7 @@ class HomeScreen extends StatelessWidget {
               CarouselSlider(
                 carouselController: _carouselController,
                 options: CarouselOptions(
-                  height: 300.0,
+                  height: 250.0,
                   aspectRatio: 16 / 6,
                   enableInfiniteScroll: true,
                   autoPlay: true,

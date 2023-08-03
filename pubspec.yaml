@@ -1,5 +1,6 @@
 name: komb_encontro
 description: Organização do evento.
+# main: web\main.dart
 version: 1.0.0
 
 environment:
@@ -13,16 +14,16 @@ dependencies:
 
 flutter:
   assets:
-    - web/img/kombismo_fu2.jpeg
-    - web/img/kombismo_fu2.png
-    - web/img/logopreta2.png
     - web/img/kombismo_branco2.png
     - web/img/old3.jpg
-    - web\carrosel\gol3.jpeg
     - web\carrosel\branca1.jpeg
     - web\carrosel\branca2.jpeg
     - web\carrosel\azul.jpeg
     - web\carrosel\preta.jpeg
+    - web\patrocinadores\IORA.jpg
+    - web\patrocinadores\laserdj.jpg
+    - web\patrocinadores\tarab.jpg
+    - web\patrocinadores\ambioeste.jpg
 
   fonts:
     - family: Fresh Press
