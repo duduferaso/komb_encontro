@@ -42,6 +42,7 @@ class MyApp extends StatelessWidget {
 class HomeScreen extends StatelessWidget {
   final CarouselController _carouselController = CarouselController();
 
+  @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
 
