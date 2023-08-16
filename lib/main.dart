@@ -21,8 +21,11 @@ Future<void> main() async {
 List<String> images = [
   'lib/carrosel/branca1.jpeg',
   'lib/carrosel/branca2.jpeg',
+  'lib/carrosel/branca3.jpeg',
   'lib/carrosel/azul.jpeg',
   'lib/carrosel/preta.jpeg',
+  'lib/carrosel/preta2.jpeg',
+  'lib/carrosel/juntas.jpeg',
 ];
 
 List<String> images2 = [
@@ -33,6 +36,8 @@ List<String> images2 = [
   'lib/patrocinadores/dalla.jpeg',
   'lib/patrocinadores/delivery.jpeg',
   'lib/patrocinadores/santochopp.jpeg',
+  'lib/patrocinadores/armazem.jpg',
+  'lib/patrocinadores/sabedot.jpg',
 ];
 
 List<String> items = [
@@ -553,28 +558,30 @@ class HomeScreen extends StatelessWidget {
               CarouselSlider(
                 carouselController: _carouselController,
                 options: CarouselOptions(
-                  height: 300.0,
-                  aspectRatio: 16 / 6,
+                  height: 150.0,
+                  // aspectRatio: 16 / 6,
+                  aspectRatio: MediaQuery.of(context).size.width * 0.8 / 400.0,
                   enableInfiniteScroll: true,
                   autoPlay: true,
                   autoPlayInterval: Duration(seconds: 3),
                   autoPlayAnimationDuration: Duration(milliseconds: 800),
                   autoPlayCurve: Curves.fastOutSlowIn,
-                  enlargeCenterPage: true,
+                  enlargeCenterPage: false,
                   scrollDirection: Axis.horizontal,
                 ),
                 items: images2.map((imagePath) {
                   return Builder(
                     builder: (BuildContext context) {
                       return Container(
-                        width: MediaQuery.of(context).size.width,
+                        width: MediaQuery.of(context).size.width * 0.8,
                         margin: EdgeInsets.symmetric(horizontal: 5.0),
                         decoration: BoxDecoration(
-                          color: Colors.grey[200],
+                          // color: Colors.grey[200],
+                          color: Colors.transparent,
                         ),
                         child: Image.asset(
                           imagePath,
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         ),
                       );
                     },

@@ -18,12 +18,15 @@ dependencies:
 
 flutter:
   assets:
-    - lib/img/kombismo_branco2.png
-    - lib/img/old3.jpg
+    - lib\img\kombismo_branco2.png
+    - lib\img\old3.jpg
     - lib\carrosel\branca1.jpeg
     - lib\carrosel\branca2.jpeg
     - lib\carrosel\azul.jpeg
     - lib\carrosel\preta.jpeg
+    - lib\carrosel\branca3.jpeg
+    - lib\carrosel\preta2.jpeg
+    - lib\carrosel\juntas.jpeg
 
     - lib\patrocinadores\IORA.jpeg
     - lib\patrocinadores\laserdj.jpg
@@ -32,6 +35,8 @@ flutter:
     - lib\patrocinadores\dalla.jpeg
     - lib\patrocinadores\delivery.jpeg
     - lib\patrocinadores\santochopp.jpeg
+    - lib\patrocinadores\armazem.jpg
+    - lib\patrocinadores\sabedot.jpg
 
   fonts:
     - family: Fresh Press
