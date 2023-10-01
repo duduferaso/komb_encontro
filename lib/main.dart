@@ -1,12 +1,9 @@
-import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:komb_encontro/firebase_options.dart';
-
-import 'package:komb_encontro/models/formulario.dart';
 import 'package:komb_encontro/provider/formulario_provider.dart';
 import 'custom_dialog.dart';
 
@@ -40,11 +37,7 @@ List<String> images2 = [
   'lib/patrocinadores/sabedot.jpg',
 ];
 
-List<String> items = [
-  '* Sorteio de Brindes',
-  '* Praça de Alimentação',
-  '* Check List Veicular',
-];
+List<String> items = ['* Sorteio de Brindes', '* Praça de Alimentação'];
 
 class MyApp extends StatelessWidget {
   @override
@@ -64,21 +57,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// void _showRegisteredUsers(BuildContext context) async {
-//   FirebaseFirestore db = FirebaseFirestore.instance;
-//   QuerySnapshot snapshot = await db.collection("formulario").get();
-
-//   List<Map<String, dynamic>> registeredUsersData =
-//       snapshot.docs.map((doc) => doc.data() as Map<String, dynamic>).toList();
-
-//   showDialog(
-//     context: context,
-//     builder: (BuildContext context) {
-//       return RegisteredUsersDialog(
-//           registeredUsersData); // Use the custom dialog
-//     },
-//   );
-// }
 void _showRegisteredUsers(BuildContext context) async {
   FirebaseFirestore db = FirebaseFirestore.instance;
   QuerySnapshot snapshot = await db.collection("formulario").get();
@@ -241,7 +219,7 @@ class HomeScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      '02 de setembro 2023',
+                      '07 de outubro 2023',
                       style: TextStyle(
                         fontFamily: 'Stencil',
                         fontSize: titleFontSize,

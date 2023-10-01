@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.json": "3c6da621918a510c984ba2217a840d51",
-"assets/AssetManifest.smcbin": "3e5a28fd4fe09772060c953035f8fd18",
+const RESOURCES = {"assets/AssetManifest.json": "d78a5d5701142a115cc1a354c35e332e",
+"assets/AssetManifest.smcbin": "e6f9320abc7d095f59601c99be6260c7",
 "assets/FontManifest.json": "581aec9f46784b85cf911687dc61f865",
 "assets/lib/carrosel/azul.jpeg": "2c24be3927752c97e55680e45953b654",
 "assets/lib/carrosel/branca1.jpeg": "7e1efb69cdbec444a21baed652edb5bf",
@@ -13,6 +13,7 @@ const RESOURCES = {"assets/AssetManifest.json": "3c6da621918a510c984ba2217a840d5
 "assets/lib/carrosel/juntas.jpeg": "35f51953b1461410fb9bb3f897f8a29f",
 "assets/lib/carrosel/preta.jpeg": "7ffd3f5c79556aa71e5ab29eea73ac4a",
 "assets/lib/carrosel/preta2.jpeg": "5fe2c0f7b047060b9db474e49c0fdee3",
+"assets/lib/certificado/Certificado_grande.jpg": "ec8adfa3109848e82bec4609c6fbcedd",
 "assets/lib/fontes/fresca.ttf": "8b979a2d1e5765da9bc477792c8ceb3f",
 "assets/lib/fontes/stencil.ttf": "562bf64911a7a980333915246be161da",
 "assets/lib/img/kombismo_branco2.png": "c1a7dac7b92cb4e421cfc2ff99514c4b",
@@ -44,7 +45,7 @@ const RESOURCES = {"assets/AssetManifest.json": "3c6da621918a510c984ba2217a840d5
 "assets/lib%255Cpatrocinadores%255Csabedot.jpg": "23ec000a358a23135a5a3202cec536ec",
 "assets/lib%255Cpatrocinadores%255Csantochopp.jpeg": "87fd793909b0a2899560feed1f76f8df",
 "assets/lib%255Cpatrocinadores%255Ctarab.jpg": "d48412c0eed1ee8d46c794a5a6854238",
-"assets/NOTICES": "6dae969c47fd2388ecf56cb68ccedb04",
+"assets/NOTICES": "baf446238977d34af074d9ff4fa11af8",
 "assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
 "assets/web/carrosel/azul.jpeg": "2c24be3927752c97e55680e45953b654",
 "assets/web/carrosel/branca1.jpeg": "7e1efb69cdbec444a21baed652edb5bf",
@@ -85,7 +86,7 @@ const RESOURCES = {"assets/AssetManifest.json": "3c6da621918a510c984ba2217a840d5
 "index.html": "1580360f2745c2bec2aebaef5d96a2f6",
 "/": "1580360f2745c2bec2aebaef5d96a2f6",
 "main.dart": "f047407a41823ae46096cdfd8e3e4409",
-"main.dart.js": "569ffc245e11852310692018bca0ff60",
+"main.dart.js": "eef465c97bd420aba93c9621394ac2bf",
 "patrocinadores/ambioeste.jpg": "c8d4c0c38ccb5649af304e9ae5e7c13b",
 "patrocinadores/IORA.jpg": "5ee9d71ca15db342f283fc4932fb1e98",
 "patrocinadores/laserdj.jpg": "57d1b70805a6cd07978b686a4b9b7792",
