@@ -12,11 +12,23 @@ class RegisteredUsersDialog extends StatelessWidget {
   Future<pdfLib.Document> generateCertificatePdf(
       BuildContext context, Map<String, dynamic> userData) async {
     final ByteData imageData =
-        await rootBundle.load('lib/certificado/Certificado_grande.jpg');
+        await rootBundle.load('lib/certificado/Certificado_novo.jpg');
+    final ByteData freshPressFontData =
+        await rootBundle.load('lib/fontes/fresca.ttf');
+    final ByteData stencilFontData =
+        await rootBundle.load('lib/fontes/stencil.ttf');
+    final ByteData loubagFontData =
+        await rootBundle.load('lib/fontes/Loubag-Regular.ttf');
+    final ByteData eliteFontData =
+        await rootBundle.load('lib/fontes/SpecialElite-Regular.ttf');
 
     final Uint8List imageBytes = imageData.buffer.asUint8List();
 
     final pdf = pdfLib.Document();
+    pdfLib.Font freshPressFont = pdfLib.Font.ttf(freshPressFontData);
+    pdfLib.Font stencilFont = pdfLib.Font.ttf(stencilFontData);
+    pdfLib.Font loubagFont = pdfLib.Font.ttf(loubagFontData);
+    pdfLib.Font eliteFont = pdfLib.Font.ttf(eliteFontData);
 
     pdf.addPage(
       pdfLib.Page(
@@ -30,36 +42,36 @@ class RegisteredUsersDialog extends StatelessWidget {
                   child: pdfLib.Image(pdfLib.MemoryImage(imageBytes),
                       fit: pdfLib.BoxFit.fill)),
               pdfLib.Container(
-                height: 475, // Defina a altura desejada
+                height: 520, // Defina a altura desejada
                 child: pdfLib.Center(
                   child: pdfLib.Text(
                     userData["nome"]?.toString() ?? "N/A",
-                    style: pdfLib.TextStyle(fontSize: 50),
+                    style: pdfLib.TextStyle(fontSize: 50, font: loubagFont),
                   ),
                 ),
               ),
               pdfLib.Positioned(
                 left: 150,
-                top: 400,
+                top: 390,
                 child: pdfLib.Text(
                   userData["ano"]?.toString() ?? "N/A",
-                  style: pdfLib.TextStyle(fontSize: 40),
+                  style: pdfLib.TextStyle(fontSize: 40, font: loubagFont),
                 ),
               ),
               pdfLib.Positioned(
-                left: 230,
-                top: 340,
+                left: 220,
+                top: 330,
                 child: pdfLib.Text(
                   userData["modeloKombi"]?.toString() ?? "N/A",
-                  style: pdfLib.TextStyle(fontSize: 40),
+                  style: pdfLib.TextStyle(fontSize: 40, font: loubagFont),
                 ),
               ),
               pdfLib.Positioned(
                 left: 325,
-                top: 450,
+                top: 440,
                 child: pdfLib.Text(
                   userData["motorizacao"]?.toString() ?? "N/A",
-                  style: pdfLib.TextStyle(fontSize: 40),
+                  style: pdfLib.TextStyle(fontSize: 40, font: loubagFont),
                 ),
               ),
             ],

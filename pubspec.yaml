@@ -37,6 +37,7 @@ flutter:
     - lib\patrocinadores\armazem.jpg
     - lib\patrocinadores\sabedot.jpg
     - lib/certificado/Certificado_grande.jpg
+    - lib/certificado/Certificado_novo.jpg
 
 
   fonts:
@@ -46,6 +47,12 @@ flutter:
     - family: Stencil
       fonts:
         - asset: lib\fontes\stencil.ttf
+    - family: Loubag
+      fonts:
+        - asset: lib\fontes\Loubag-Regular.ttf
+    - family: Elite
+      fonts:
+        - asset: lib\fontes\SpecialElite-Regular.ttf
 
 dev_dependencies:
   flutter_test:
